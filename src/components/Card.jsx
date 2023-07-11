@@ -10,13 +10,15 @@ const Card = () => {
 
   return (
     <div className="bg-[#F6F6F6] my-[40px]">
-      <div className="flex flex-wrap lg:h-[210px] lg:mx-80 bg-orange-600">
+      <div className="flex flex-wrap lg:h-[210px] lg:mx-80">
         {images.map((src, index) => (
           <div
             key={index}
-            className="w-1/2 sm:w-1/3  md:w-1/6 lg:w-1/6 xl:w-1/6 my-auto"
+            className="w-1/2 sm:w-1/3 md:w-1/6 lg:w-1/6 xl:w-1/6 my-auto flex justify-center"
           >
-            <Image src={src} alt={`card${index + 1}`} />
+            <div className="flex items-center">
+              <Image src={src} alt={`card${index + 1}`} />
+            </div>
           </div>
         ))}
       </div>
