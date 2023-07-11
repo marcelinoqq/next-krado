@@ -22,7 +22,7 @@ const Header = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex-shrink-0 flex items-center">
-                <Image className="" src={logo} alt="Logo" />
+                <Image src={logo} alt="Logo" />
               </div>
 
               <div className="hidden sm:block my-auto">
@@ -30,7 +30,13 @@ const Header = () => {
                   {navigation.map((item) => (
                     <p
                       key={item.name}
-                      className="text-black px-3 py-2 rounded-md text-sm font-medium"
+                      className={`text-black px-3 py-2 rounded-md text-base font-medium
+                      ${
+                        item.name === "JOIN US"
+                          ? "bg-[#333] text-white px-6 py-2 rounded-2xl"
+                          : ""
+                      }
+                      `}
                     >
                       {item.name}
                     </p>
@@ -63,7 +69,13 @@ const Header = () => {
               {navigation.map((item) => (
                 <p
                   key={item.name}
-                  className="text-black block px-3 py-2 rounded-md text-base font-medium"
+                  className={`text-black px-3 py-2 rounded-md text-base text-sm font-medium
+                  ${
+                    item.name === "JOIN US"
+                      ? "bg-[#333] text-white px-6 py-2 rounded-2xl text-center"
+                      : ""
+                  }
+                  `}
                 >
                   {item.name}
                 </p>

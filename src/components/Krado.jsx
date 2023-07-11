@@ -8,7 +8,7 @@ const Krado = () => {
     <>
       <div className="lg:mx-80 lg:flex mt-[80px]">
         <div className="lg:w-1/2">
-          <Image src={head1} alt="headphone 1" className="md:mx-auto" />
+          <Image src={head1} alt="headphone 1" className="mx-auto lg:mx-0" />
         </div>
 
         <div className="lg:w-1/2 my-auto lg:text-start text-center">

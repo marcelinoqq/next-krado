@@ -47,17 +47,17 @@ const Technology = () => {
 
   return (
     <>
-      <div className="grid justify-center mt-[40px]">
-        <p className="lg:text-[40px] text-[20px] text-center font-black">
+      <div className="text-center mt-[60px]">
+        <p className="lg:text-[40px] text-[20px] text-[#333333] text-center font-bold">
           Technology Keeps Moving Forward
         </p>
-        <p className="lg:text-[15px] text-[10px] mx-auto text-center">
+        <p className="lg:text-[15px] text-[10px] mx-auto text-center text-[#8D8D8D] font-light">
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
           offici
         </p>
       </div>
       <div className="lg:mx-80 mt-[60px] lg:flex">
-        <div className="lg:w-1/3 lg:mx-20">
+        <div className="lg:w-full lg:mx-10">
           {firstThree.map((item, index) => (
             <div key={index} className={index === 1 ? "my-[80px]" : ""}>
               <Image src={item.image} alt="message" />
@@ -66,16 +66,10 @@ const Technology = () => {
             </div>
           ))}
         </div>
-        <div className="lg:w-1/3">
-          <Image
-            src={headphones}
-            width={415}
-            height={617}
-            className="mx-auto"
-            alt="headphones"
-          />
+        <div className="lg:w-full">
+          <Image src={headphones} className="lg:mx-auto" alt="headphones" />
         </div>
-        <div className="lg:w-1/3 items-center lg:mx-20">
+        <div className="lg:w-full lg:mx-10">
           {secondThree.map((item, index) => (
             <div key={index} className={index === 1 ? "my-[80px]" : ""}>
               <Image src={item.image} alt="message" />

@@ -5,8 +5,9 @@ import Science from "@/components/Science";
 import Krado from "@/components/Krado";
 import Great from "@/components/Great";
 import Different from "@/components/Different";
+import Slider from "@/components/Slider";
 import Big from "@/components/Big";
-// import Card from "@/components/Card";
+import Card from "@/components/Card";
 import Subscribe from "@/components/Subscribe";
 import Footer from "@/components/Footer";
 
@@ -20,7 +21,9 @@ const Home = () => {
       <Krado />
       <Great />
       <Different />
+      <Slider />
       <Big />
+      <Card />
       <Subscribe />
       <Footer />
     </div>
