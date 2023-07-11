@@ -67,7 +67,7 @@ const Technology = () => {
           ))}
         </div>
         <div className="lg:w-full">
-          <Image src={headphones} className="lg:mx-auto" alt="headphones" />
+          <Image src={headphones} alt="headphones" />
         </div>
         <div className="lg:w-full lg:mx-10">
           {secondThree.map((item, index) => (
