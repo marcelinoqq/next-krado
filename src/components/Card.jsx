@@ -16,7 +16,7 @@ const Card = () => {
             key={index}
             className="w-1/2 sm:w-1/3 md:w-1/6 lg:w-1/6 xl:w-1/6 my-auto flex justify-center"
           >
-            <div className="flex items-center">
+            <div className="flex items-center py-3">
               <Image src={src} alt={`card${index + 1}`} />
             </div>
           </div>
