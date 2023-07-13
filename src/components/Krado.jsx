@@ -1,4 +1,4 @@
-import ExploreButton from "./ExploreButton";
+import Button from "./Button";
 import Image from "next/image";
 import head1 from "@/../public/head1.png";
 import head2 from "@/../public/head2.png";
@@ -25,7 +25,7 @@ const Krado = () => {
             </p>
           </div>
           <div className="mt-10">
-            <ExploreButton buttonText="EXPLORE MORE" textColor="text-white" />
+            <Button buttonText="EXPLORE MORE" textColor="text-white" />
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@ const Krado = () => {
             </p>
           </div>
           <div className="mt-10">
-            <ExploreButton buttonText="EXPLORE MORE" textColor="text-white" />
+            <Button buttonText="EXPLORE MORE" textColor="text-white" />
           </div>
         </div>
         <div className="lg:w-1/2 flex flex-col items-end">

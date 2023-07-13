@@ -7,12 +7,12 @@ const icons = [circle, circle1, circle, circle, circle];
 
 const Footer = () => {
   return (
-    <div className="h-[520px] bg-[#F4F4F4] mt-[100px] flex justify-center items-center">
+    <div className="lg:h-[520px] h-[260px] bg-[#F4F4F4] mt-[80px] flex justify-center items-center">
       <div className="lg:mx-80">
         <div className="grid justify-center text-center">
           <div className="flex flex-col items-center">
             <Image src={footer} alt="footer" />
-            <p className="text-[56px] font-black">KRADO</p>
+            <p className="lg:text-[56px] text-[40px] font-black">KRADO</p>
             <div className="flex gap-4">
               {icons.map((icon, index) => (
                 <Image key={index} src={icon} alt={`circle-${index}`} />

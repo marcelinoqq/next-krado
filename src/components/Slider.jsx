@@ -2,7 +2,7 @@ import { Carousel } from "@material-tailwind/react";
 import Image from "next/image";
 import square from "@/../public/square.png";
 
-export default function Slider() {
+const Slider = () => {
   const carouselData = [
     {
       image: square,
@@ -29,32 +29,23 @@ export default function Slider() {
 
   return (
     <>
-      <div className="bg-[#F0F3F7] my-[40px] lg:h-[710px]">
-        <div className="mb-[60px]">
-          <p className="text-center lg:text-[40px] text-[20px] font-bold text-[#333333]">
-            Feedback From Our Customer
-          </p>
-          <p className="text-center text-[15px] font-light text-[#8D8D8D]">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa
-          </p>
-        </div>
-
-        <Carousel transition={{ duration: 1 }}>
-          {carouselData.map((item, index) => (
-            <div className="lg:mx-80" key={index}>
-              <div className="flex">
-                <Image src={item.image} alt="square" className="w-[30%]" />
-                <p className="lg:text-[40px] text-[20px] lg:w-[30%] w-[50%] my-auto ml-5">
-                  {item.name} {item.location}
-                </p>
-              </div>
-              <p className="lg:text-[20px] text-[10px] lg:w-[40%] mt-[10px]">
-                {item.description}
+      <Carousel transition={{ duration: 1 }}>
+        {carouselData.map((item, index) => (
+          <div className="lg:mx-80" key={index}>
+            <div className="flex">
+              <Image src={item.image} alt="square" className="w-[30%]" />
+              <p className="lg:text-[40px] text-[20px] lg:w-[30%] w-[50%] my-auto ml-5">
+                {item.name} {item.location}
               </p>
             </div>
-          ))}
-        </Carousel>
-      </div>
+            <p className="lg:text-[20px] text-[10px] lg:w-[40%] mt-[10px]">
+              {item.description}
+            </p>
+          </div>
+        ))}
+      </Carousel>
     </>
   );
-}
+};
+
+export default Slider;

@@ -5,7 +5,7 @@ import Science from "@/components/Science";
 import Krado from "@/components/Krado";
 import Great from "@/components/Great";
 import Different from "@/components/Different";
-import Slider from "@/components/Slider";
+import Feedback from "@/components/Feedback";
 import Big from "@/components/Big";
 import Card from "@/components/Card";
 import Subscribe from "@/components/Subscribe";
@@ -21,7 +21,7 @@ const Home = () => {
       <Krado />
       <Great />
       <Different />
-      <Slider />
+      <Feedback />
       <Big />
       <Card />
       <Subscribe />

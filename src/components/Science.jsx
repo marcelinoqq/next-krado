@@ -1,16 +1,16 @@
 import Image from "next/image";
-import ExploreButton from "./ExploreButton";
+import Button from "./Button";
 import video from "@/../public/video.png";
 
 const Science = () => {
   return (
     <>
-      <div className="lg:flex lg:mt-40 mt-[20px]">
+      <div className="lg:flex lg:mt-40 mt-[80px]">
         <div className="lg:w-1/2 lg:h-[600px] h-[400px] bg-[#37A000] flex items-center">
           <div className="text-white">
             <div className="lg:w-1/2"></div>
             <div className="lg:w-1/2 mx-auto">
-              <p className="lg:text-4xl text-xl font-black lg:text-start text-center">
+              <p className="lg:text-4xl text-2xl font-black lg:text-start text-center">
                 The science of today is the technology of tomorrow
               </p>
               <p className="text-lg lg:text-start mt-4 text-center">
@@ -19,7 +19,7 @@ const Science = () => {
                 quae ab illo inven.
               </p>
               <div className="mt-[20px] text-center lg:text-start">
-                <ExploreButton
+                <Button
                   buttonText="LEARN MORE"
                   textColor="text-[#FF4D1C]"
                   className="bg-white"

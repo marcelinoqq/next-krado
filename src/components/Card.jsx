@@ -9,8 +9,8 @@ const Card = () => {
   const images = [card1, card2, card3, card4, card2, card5];
 
   return (
-    <div className="bg-[#F6F6F6] my-[40px]">
-      <div className="flex flex-wrap lg:h-[210px] lg:mx-80">
+    <div className="bg-[#F6F6F6] mt-[80px]">
+      <div className="flex flex-wrap py-10 lg:h-[210px] lg:mx-80">
         {images.map((src, index) => (
           <div
             key={index}
