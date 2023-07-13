@@ -96,9 +96,9 @@ const Technology = () => {
             offici
           </p>
         </div>
-        <div className="mt-[80px] mx-5">
-          <div className="flex">
-            <div className="w-1/2 bg-red-600">
+        <div className="mt-[80px] mx-2">
+          <div className="flex gap-3">
+            <div className="w-1/2">
               {firstThree.map((item, index) => (
                 <div key={item.image}>
                   <div className={`${index === 1 ? "my-[20px]" : ""}`}>
@@ -110,7 +110,7 @@ const Technology = () => {
               ))}
             </div>
 
-            <div className="w-1/2 bg-orange-600">
+            <div className="w-1/2">
               {secondThree.map((item, index) => (
                 <div key={item.image}>
                   <div className={`${index === 1 ? "my-[20px]" : ""}`}>
