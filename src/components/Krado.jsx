@@ -8,7 +8,11 @@ const Krado = () => {
     <>
       <div className="lg:mx-80 lg:flex mt-[80px]">
         <div className="lg:w-1/2">
-          <Image src={head1} alt="headphone 1" className="mx-auto lg:mx-0" />
+          <Image
+            src={head1}
+            alt="headphone 1"
+            className="mx-auto lg:mx-0 lg:w-2/3 w-1/2"
+          />
         </div>
 
         <div className="lg:w-1/2 my-auto lg:text-start text-center">
@@ -49,7 +53,7 @@ const Krado = () => {
           </div>
         </div>
         <div className="lg:w-1/2 flex flex-col items-end">
-          <Image src={head2} alt="headphone 2" />
+          <Image src={head2} alt="headphone 2" className="lg:w-2/3" />
         </div>
       </div>
     </>
