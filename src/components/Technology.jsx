@@ -98,25 +98,25 @@ const Technology = () => {
         </div>
         <div className="mt-[80px] mx-5">
           <div className="flex">
-            <div className="w-1/2">
+            <div className="w-1/2 bg-red-600">
               {firstThree.map((item, index) => (
                 <div key={item.image}>
                   <div className={`${index === 1 ? "my-[20px]" : ""}`}>
                     <Image src={item.image} alt={item.title} />
-                    <p className="text-[22px] font-medium">{item.title}</p>
-                    <p className="text-[15px]">{item.text}</p>
+                    <p className="text-[16px] font-medium">{item.title}</p>
+                    <p className="text-[13px]">{item.text}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="w-1/2">
+            <div className="w-1/2 bg-orange-600">
               {secondThree.map((item, index) => (
                 <div key={item.image}>
                   <div className={`${index === 1 ? "my-[20px]" : ""}`}>
                     <Image src={item.image} alt={item.title} />
-                    <p className="text-[22px] font-medium">{item.title}</p>
-                    <p className="text-[15px]">{item.text}</p>
+                    <p className="text-[16px] font-medium">{item.title}</p>
+                    <p className="text-[13px]">{item.text}</p>
                   </div>
                 </div>
               ))}
